@@ -1,55 +1,13 @@
-import './Table.css';
+import './Table.scss';
 
-import { nanoid } from 'nanoid';
-import { connect } from 'react-redux';
-
-import cn from 'classnames';
 import React from 'react';
 
 import { mendeleevTable } from '../../constants';
 
-import setSelectedElement from '../../redux/actions';
+import Row from '../Row/Row';
 
-import { IElement } from '../../redux/types';
-
-interface IProps {
-  setSelectedElement: (element: IElement) => void;
-}
-
-const Table: React.FunctionComponent<IProps> = ({ setSelectedElement }: IProps) => {
-  const createElementRows = () =>
-    mendeleevTable.map((element, index) => (
-      <tr className="table__row" key={nanoid()}>
-        <td className="table__brick">{index + 1}</td>
-        <td className="table__brick">{index + 1}</td>
-        {element.map((el) => (
-          <td
-            key={nanoid()}
-            className={cn({
-              'element-brick': true,
-              'element-brick_border': el.number,
-              'element-brick_yellow': el.color === 'yellow',
-              'element-brick_blue': el.color === 'blue',
-              'element-brick_pink': el.color === 'pink',
-            })}
-          >
-            {el.title && (
-              <button type='button'
-                onClick={() => setSelectedElement(el)}
-                disabled={!el.title}
-                name={el.title}
-                className="element-brick__inner-container  button_custom-styles"
-              >
-                <div className="element-brick__number">{el.number}</div>
-                <div className="element-brick__title">{el.title}</div>
-                <div className="element-brick__name" lang='en'>{el.name}</div>
-                <div>{el.mass}</div>
-              </button>
-            )}
-          </td>
-        ))}
-      </tr>
-    ));
+const Table: React.FunctionComponent = () => {
+  const createElementRows = () => mendeleevTable.map((element, index) => <Row element={element} index={index} />);
 
   return (
     <table className="table">
@@ -133,4 +91,4 @@ const Table: React.FunctionComponent<IProps> = ({ setSelectedElement }: IProps) 
   );
 };
 
-export default connect(null, { setSelectedElement })(Table);
+export default Table;

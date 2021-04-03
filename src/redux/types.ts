@@ -1,4 +1,4 @@
-import { SET_SELECTED_ELEMENT } from '../constants';
+export const SET_SELECTED_ELEMENT = 'SET_SELECTED_ELEMENT';
 
 // store
 
