@@ -1,0 +1,62 @@
+.table__brick {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+.element-brick {
+  width: 150px;
+}
+
+.element-brick_border {
+  border: 1px solid black;
+}
+
+.element-brick_yellow {
+  background-color: yellow;
+}
+
+.element-brick_blue {
+  background-color: rgb(24, 167, 152);
+}
+
+.element-brick_pink {
+  background-color: violet;
+}
+
+.element-brick__inner-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.element-brick__number {
+  position: absolute;
+  right: 5px;
+}
+
+.element-brick__title {
+  font-size: 2em;
+}
+
+.element-brick__name {
+  font-weight: 500;
+}
+
+.table__brick-iner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button_custom-styles {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.element-brick:hover {
+  filter: brightness(80%);
+}

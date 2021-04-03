@@ -208,7 +208,3 @@ export const mendeleevTable = [
     {},
   ],
 ];
-
-export type ITable = typeof mendeleevTable;
-
-export const SET_SELECTED_ELEMENT = 'SET_SELECTED_ELEMENT';
