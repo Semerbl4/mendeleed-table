@@ -7,15 +7,14 @@ import cn from 'classnames';
 import { nanoid } from 'nanoid';
 import { useDispatch } from 'react-redux';
 
-import { IElement } from '../../redux/types';
-
-import { setSelectedElement } from '../../redux';
+import { IElement } from '../../redux/selectedElement/selectedElementTypes';
 
 interface IProps {
   el: IElement;
+  setSelectedElement: Function,
 }
 
-const Brick: React.FC<IProps> = ({ el }) => {
+export const Brick: React.FC<IProps> = ({ el, setSelectedElement }) => {
   const dispatch = useDispatch();
 
   return (
@@ -51,5 +50,3 @@ const Brick: React.FC<IProps> = ({ el }) => {
     </>
   );
 };
-
-export default Brick;

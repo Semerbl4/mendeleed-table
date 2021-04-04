@@ -1,4 +1,4 @@
-.selected-element_container {
+.selected-element__container {
   border: 1px solid black;
   margin-top: 80px;
   margin-left: auto;
@@ -6,15 +6,16 @@
   width: 200px;
 }
 
-.selected-element__element_pading {
-  padding: 5px;
+.selected-element__element {
+  &_pading {
+    padding: 5px;
+  }
+  &_border {
+    border-top: 1px solid black;
+  }
 }
 
-.selected-element__element_border {
-  border-top: 1px solid black;
-}
-
-.selected-title {
+.selected-element__title {
   text-align: center;
   font-weight: 500;
 }
