@@ -3,17 +3,17 @@ import { RootStateOrAny, useSelector } from 'react-redux';
 
 import cn from 'classnames';
 
-import { IElement } from '../../redux/types';
+import { IElement } from '../../redux/selectedElement/selectedElementTypes';
 
 import './SelectedElement.scss';
 
-const SelectedElement: React.FC = () => {
+export const SelectedElement: React.FC = () => {
   const element = useSelector((state: RootStateOrAny): IElement => state.selectedElement);
 
   return (
-    <div className="selected-element_container">
+    <div className="selected-element__container">
       {console.log(element)}
-      <p className="selected-title">Выбранный элемент</p>
+      <p className="selected-element__title">Выбранный элемент</p>
       {element.title && (
         <div
           className={cn({
@@ -35,4 +35,3 @@ const SelectedElement: React.FC = () => {
   );
 };
 
-export default SelectedElement;

@@ -1,6 +1,6 @@
 export const mendeleevTable = [
   [
-    { title: 'H', name: 'ВОДОРОД', mass: 1.008, number: 1, color: 'pink' },
+    { id: 1, title: 'H', name: 'ВОДОРОД', mass: 1.008, number: 1, color: 'pink' },
     {},
     {},
     {},
@@ -10,10 +10,11 @@ export const mendeleevTable = [
     {},
     {},
     {},
-    { title: 'He', name: 'ГЕЛИЙ', mass: 4.003, number: 2, color: 'pink' },
+    {  id: 2, title: 'He', name: 'ГЕЛИЙ', mass: 4.003, number: 2, color: 'pink' },
   ],
   [
     {
+      id: 3,
       title: 'Li',
       name: 'ЛИТИЙ',
       mass: 6.941,
@@ -21,6 +22,7 @@ export const mendeleevTable = [
       color: 'pink',
     },
     {
+      id: 4,
       title: 'Be',
       name: 'БЕРИЛЛИЙ',
       mass: 9.0122,
@@ -28,6 +30,7 @@ export const mendeleevTable = [
       color: 'pink',
     },
     {
+      id: 5,
       title: 'B',
       name: 'Бор',
       mass: 10.811,
@@ -35,6 +38,7 @@ export const mendeleevTable = [
       color: 'yellow',
     },
     {
+      id: 6,
       title: 'С',
       name: 'УГЛЕРОД',
       mass: 12.011,
@@ -42,6 +46,7 @@ export const mendeleevTable = [
       color: 'yellow',
     },
     {
+      id: 7,
       title: 'N',
       name: 'АЗОТ',
       mass: 14.007,
@@ -49,6 +54,7 @@ export const mendeleevTable = [
       color: 'yellow',
     },
     {
+      id: 8,
       title: 'O',
       name: 'Кислород',
       mass: 15.999,
@@ -56,6 +62,7 @@ export const mendeleevTable = [
       color: 'yellow',
     },
     {
+      id: 9,
       title: 'F',
       name: 'ФТОР',
       mass: 18.998,
@@ -66,6 +73,7 @@ export const mendeleevTable = [
     {},
     {},
     {
+      id: 10,
       title: 'Ne',
       name: 'НЕОН',
       mass: 20.179,
@@ -75,6 +83,7 @@ export const mendeleevTable = [
   ],
   [
     {
+      id: 11,
       title: 'NA',
       name: 'НАТРИЙ',
       mass: 22.99,
@@ -82,6 +91,7 @@ export const mendeleevTable = [
       color: 'pink',
     },
     {
+      id: 12,
       title: 'MG',
       name: 'МАГНИЙ',
       mass: 24.312,
@@ -89,6 +99,7 @@ export const mendeleevTable = [
       color: 'pink',
     },
     {
+      id: 13,
       title: 'Al',
       name: 'АЛЮМИНИЙ',
       mass: 26.092,
@@ -96,6 +107,7 @@ export const mendeleevTable = [
       color: 'yellow',
     },
     {
+      id: 14,
       title: 'Si',
       name: 'КРЕМНИЙ',
       mass: 28.086,
@@ -103,6 +115,7 @@ export const mendeleevTable = [
       color: 'yellow',
     },
     {
+      id: 15,
       title: 'P',
       name: 'ФОСФОР',
       mass: 30.974,
@@ -110,6 +123,7 @@ export const mendeleevTable = [
       color: 'yellow',
     },
     {
+      id: 16,
       title: 'S',
       name: 'СЕРА',
       mass: 32.064,
@@ -117,6 +131,7 @@ export const mendeleevTable = [
       color: 'yellow',
     },
     {
+      id: 17,
       title: 'Cl',
       name: 'ХЛОР',
       mass: 35.453,
@@ -127,6 +142,7 @@ export const mendeleevTable = [
     {},
     {},
     {
+      id: 18,
       title: 'Ar',
       name: 'Аргон',
       mass: 39.948,
@@ -136,6 +152,7 @@ export const mendeleevTable = [
   ],
   [
     {
+      id: 19,
       title: 'K',
       name: 'КАЛИЙ',
       mass: 39.102,
@@ -143,6 +160,7 @@ export const mendeleevTable = [
       color: 'pink',
     },
     {
+      id: 20,
       title: 'Сa',
       name: 'Кальций',
       mass: 40.08,
@@ -150,6 +168,7 @@ export const mendeleevTable = [
       color: 'pink',
     },
     {
+      id: 21,
       title: 'Sc',
       name: 'СКАНДИЙ',
       mass: 44.957,
@@ -157,6 +176,7 @@ export const mendeleevTable = [
       color: 'blue',
     },
     {
+      id: 22,
       title: 'Ti',
       name: 'Титан',
       mass: 47.956,
@@ -164,6 +184,7 @@ export const mendeleevTable = [
       color: 'blue',
     },
     {
+      id: 23,
       title: 'V',
       name: 'ВАНАДИЙ',
       mass: 50.941,
@@ -171,6 +192,7 @@ export const mendeleevTable = [
       color: 'blue',
     },
     {
+      id: 24,
       title: 'Cr',
       name: 'Хром',
       mass: 51.996,
@@ -178,6 +200,7 @@ export const mendeleevTable = [
       color: 'blue',
     },
     {
+      id: 25,
       title: 'Mn',
       name: 'МАРГАНЕЦ',
       mass: 54.938,
@@ -185,6 +208,7 @@ export const mendeleevTable = [
       color: 'blue',
     },
     {
+      id: 26,
       title: 'Fe',
       name: 'Железа',
       mass: 55.849,
@@ -192,6 +216,7 @@ export const mendeleevTable = [
       color: 'blue',
     },
     {
+      id: 27,
       title: 'Co',
       name: 'Кобальт',
       mass: 58.933,
@@ -199,6 +224,7 @@ export const mendeleevTable = [
       color: 'blue',
     },
     {
+      id: 28,
       title: 'Ni',
       name: 'НИКЕЛЬ',
       mass: 58.7,

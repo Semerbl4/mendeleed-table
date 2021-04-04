@@ -4,9 +4,9 @@ import React from 'react';
 
 import { mendeleevTable } from '../../constants';
 
-import Row from '../Row/Row';
+import { Row } from '../Row/Row';
 
-const Table: React.FunctionComponent = () => {
+export const Table: React.FunctionComponent = () => {
   const createElementRows = () => mendeleevTable.map((element, index) => <Row element={element} index={index} />);
 
   return (
@@ -91,4 +91,3 @@ const Table: React.FunctionComponent = () => {
   );
 };
 
-export default Table;

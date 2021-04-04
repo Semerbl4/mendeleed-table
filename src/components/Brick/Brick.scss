@@ -1,27 +1,20 @@
-.table__brick {
-  border: 1px solid black;
-  padding: 5px;
-  text-align: center;
-}
-
 .element-brick {
   width: 150px;
-}
-
-.element-brick_border {
-  border: 1px solid black;
-}
-
-.element-brick_yellow {
-  background-color: yellow;
-}
-
-.element-brick_blue {
-  background-color: rgb(24, 167, 152);
-}
-
-.element-brick_pink {
-  background-color: violet;
+  &_border {
+    border: 1px solid black;
+  }
+  &_yellow {
+    background-color: yellow;
+  }
+  &_blue {
+    background-color: rgb(24, 167, 152);
+  }
+  &_pink {
+    background-color: violet;
+  }
+  &:hover {
+    filter: brightness(80%);
+  }
 }
 
 .element-brick__inner-container {
@@ -55,8 +48,4 @@
   border: none;
   outline: none;
   cursor: pointer;
-}
-
-.element-brick:hover {
-  filter: brightness(80%);
 }

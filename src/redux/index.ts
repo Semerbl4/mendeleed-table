@@ -1,1 +1,1 @@
-export { setSelectedElement } from './actions';
+export { setSelectedElement } from './selectedElement/selectedElementActions';
